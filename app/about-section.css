@@ -1,0 +1,192 @@
+/* ═══════════════════════════════════════════
+   About Section — ProfileCard + CardSwap
+   ═══════════════════════════════════════════ */
+
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #050008;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6vw;
+  padding: 6rem 6%;
+  overflow: hidden;
+}
+
+/* Ambient background glow */
+.about-bg-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 50%, rgba(202, 0, 195, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 50%, rgba(61, 0, 107, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Left Column: ProfileCard ─── */
+.about-profile-col {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ─── Right Column: Cards label + CardSwap ─── */
+.about-cards-col {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  flex: 1;
+  max-width: 540px;
+}
+
+.about-cards-tag {
+  font-family: 'Inter', monospace, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ca00c3;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.about-cards-title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.about-cards-label {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── CardSwap wrapper ─── */
+.about-cardswap-wrap {
+  position: relative;
+  /* enough height for stacked cards + vertical offset */
+  height: 380px;
+  display: flex;
+  align-items: center;
+}
+
+/* ─── Individual card styles ─── */
+.about-card {
+  font-family: 'Inter', sans-serif;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  overflow: hidden;
+}
+
+.about-card--skills {
+  background: linear-gradient(135deg, #0d0010 0%, #1a0030 100%) !important;
+}
+
+.about-card--projects {
+  background: linear-gradient(135deg, #0a000f 0%, #220040 100%) !important;
+}
+
+.about-card--hire {
+  background: linear-gradient(135deg, #100010 0%, #2a0040 60%, #3d006b 100%) !important;
+  border-color: rgba(202, 0, 195, 0.25) !important;
+}
+
+.ac-inner {
+  padding: 1.6rem 1.8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  box-sizing: border-box;
+}
+
+.ac-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.ac-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.ac-desc {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  flex: 1;
+}
+
+.ac-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.ac-tags span {
+  background: rgba(202, 0, 195, 0.12);
+  border: 1px solid rgba(202, 0, 195, 0.25);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+}
+
+.ac-cta {
+  display: inline-block;
+  margin-top: auto;
+  color: #ca00c3;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.ac-cta:hover {
+  color: #ff00f7;
+  transform: translateX(4px);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    padding: 5rem 6%;
+    gap: 4rem;
+  }
+
+  .about-cards-col {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-cards-label {
+    align-items: center;
+  }
+
+  .about-cardswap-wrap {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,39 @@
+.text-type {
+    color: white;
+    position: absolute;
+    bottom: 12%;
+    left: 6%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    white-space: nowrap;
+}
+
+/* Typing text — grows to the right */
+.text-type__content {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Hero variant: larger, styled for portfolio */
+.text-type.hero-texttype {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.2;
+}
+
+.text-type__cursor {
+    margin-left: 0.1rem;
+    display: inline-block;
+    opacity: 1;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.text-type__cursor--hidden {
+    display: none;
+}
