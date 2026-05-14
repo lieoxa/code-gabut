@@ -10,15 +10,15 @@ import './about-section.css';
 
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '#home' },
-  { label: 'About', ariaLabel: 'Learn about us', link: '#about' },
-  { label: 'Services', ariaLabel: 'View our services', link: '#services' },
-  { label: 'Contact', ariaLabel: 'Get in touch', link: '#contact' }
+  { label: 'About', ariaLabel: 'Learn about us', link: '#about' }
+  // { label: 'Services', ariaLabel: 'View our services', link: '#services' },
+  // { label: 'Contact', ariaLabel: 'Get in touch', link: '#contact' }
 ];
 
 const socialItems = [
   { label: 'GitHub', link: 'https://github.com/lieoxa' },
   { label: 'Instagram', link: 'https://instagram.com/lieoxa' },
-  { label: 'Email', link: 'mailto:adriel@email.com' }
+  { label: 'Email', link: 'mailto:adrielfelixposuma@gmail.com' }
 ];
 
 export default function Home() {
