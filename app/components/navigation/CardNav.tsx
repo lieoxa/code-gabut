@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useLayoutEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { gsap } from 'gsap';
 import { GoArrowUpRight } from 'react-icons/go';
 import './CardNav.css';
@@ -162,7 +163,7 @@ const CardNav: React.FC<CardNavProps> = ({
           {/* Logo di tengah */}
           <div className="logo-container">
             {logo ? (
-              <img src={logo} className="logo" />
+              <Image src={logo} width={40} height={40} className="logo" alt={logoAlt} />
             ) : (
               <span style={{ fontWeight: 600, fontSize: 16, color: 'white' }}>
                 {logoAlt}
