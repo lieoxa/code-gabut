@@ -78,7 +78,7 @@ export default function Home() {
             handle="lieoxa"
             status="Open to work"
             contactText="Hire Me"
-            avatarUrl="/avatar.png"
+            avatarUrl="/code-gabut/avatar.png"
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={false}
