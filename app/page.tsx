@@ -130,7 +130,7 @@ export default function Home() {
                   <div className="ac-icon">✨</div>
                   <h3 className="ac-title">Let's Work Together</h3>
                   <p className="ac-desc">Available for freelance & collaboration. I turn ideas into beautiful, performant digital products.</p>
-                  <a href="mailto:adriel@email.com" className="ac-cta">Get in touch →</a>
+                  <a href="mailto:adrielfelixposuma@gmail.com" className="ac-cta">Get in touch →</a>
                 </div>
               </Card>
             </CardSwap>
