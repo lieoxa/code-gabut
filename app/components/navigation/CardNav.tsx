@@ -6,14 +6,12 @@ import { gsap } from 'gsap';
 import { GoArrowUpRight } from 'react-icons/go';
 import './CardNav.css';
 
-// ✅ Tipe untuk setiap link di dalam card
 type CardNavLink = {
   label: string;
   href?: string;
   ariaLabel: string;
 };
 
-// ✅ Tipe untuk setiap item menu (card)
 export type CardNavItem = {
   label: string;
   bgColor: string;
@@ -21,7 +19,6 @@ export type CardNavItem = {
   links: CardNavLink[];
 };
 
-// ✅ Tipe untuk props komponen CardNav
 export interface CardNavProps {
   logo?: string;
   logoAlt?: string;

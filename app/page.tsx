@@ -24,7 +24,6 @@ const socialItems = [
 export default function Home() {
   return (
     <>
-      {/* ─── Section 1: Hero ─── */}
       <section id='home' style={{ height: '100vh', position: 'relative', backgroundColor: '#000' }}>
         <Dither
           waveColor={[0.792, 0, 0.765]}
@@ -66,11 +65,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── Section 3: About — ProfileCard + CardSwap ─── */}
       <section id='about' className="about-section">
         <div className="about-bg-glow" />
 
-        {/* Left: ProfileCard */}
         <div className="about-profile-col">
           <ProfileCard
             name="Adriel Felix Posuma"
@@ -89,7 +86,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Right: CardSwap */}
         <div className="about-cards-col">
           <div className="about-cards-label">
             <span className="about-cards-tag">— A bit about me</span>
