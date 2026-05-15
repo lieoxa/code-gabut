@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <section id='home' style={{ height: '100vh', position: 'relative', backgroundColor: '#000' }}>
         <Dither
-          waveColor={[0.792, 0, 0.765]}
+          waveColor={[0.385, 0, 0.377]}
           disableAnimation={false}
           enableMouseInteraction
           mouseRadius={0.3}
